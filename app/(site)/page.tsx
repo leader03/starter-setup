@@ -20,10 +20,10 @@ const Auth = () => {
           height="48"
           width="48"
           className="mx-auto w-auto"
-          src="/images/logo.png"
+          src="/images/logo1.png"
           alt="Logo"
         />
-        <h2 
+        <h2  
           className="
             mt-6 
             text-center 

@@ -3,6 +3,8 @@ import { useState, useCallback, useEffect } from "react"
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 import Input from "@/app/components/inputs/Input";
 import Button from "@/app/components/Button";
+import AuthSocialButton from './AuthSocialButton';
+import { BsGithub, BsGoogle  } from 'react-icons/bs';
 
 
 
@@ -122,14 +124,14 @@ const AuthForm = () => {
           </div>
 
           <div className="mt-6 flex gap-2">
-            {/* <AuthSocialButton 
+            <AuthSocialButton 
               icon={BsGithub} 
               onClick={() => socialAction('github')} 
             />
             <AuthSocialButton 
               icon={BsGoogle} 
               onClick={() => socialAction('google')} 
-            /> */}
+            />
           </div>
         </div>
         <div 
@@ -144,7 +146,7 @@ const AuthForm = () => {
           "
         >
           <div>
-            {variant === 'LOGIN' ? 'New to Messenger?' : 'Already have an account?'} 
+            {variant === 'LOGIN' ? 'New to ChatBot?' : 'Already have an account?'} 
           </div>
           <div 
             onClick={toggleVariant} 
